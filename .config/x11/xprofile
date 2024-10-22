@@ -1,0 +1,4 @@
+~/.xrandr.sh
+xrdb ~/.Xresources
+xset r rate 200 25
+
