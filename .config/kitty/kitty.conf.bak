@@ -23,6 +23,6 @@ map page_down scroll_page_down
 
 
 # BEGIN_KITTY_THEME
-# Liquid Carbon Transparent
+# Shaman
 include current-theme.conf
 # END_KITTY_THEME
