@@ -65,7 +65,7 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 
 [keys.normal.ret]
 "w" = ":write-buffer-close"
-"W" = ":buffer-close"
+"W" = ":buffer-close!"
 "n" = ":new"
 "S" = ":write"
 "s" = ":write-all"
