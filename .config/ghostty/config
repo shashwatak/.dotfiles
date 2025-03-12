@@ -1,8 +1,13 @@
 
+# custom-shader = ./shaders/underwater.glsl
+custom-shader = ./shaders/animated-gradient-shader.glsl
+custom-shader-animation = always
+
 # You can preview the config here
 gtk-titlebar = false 
 clipboard-read = allow
 clipboard-write = allow
+clipboard-trim-trailing-spaces = true
 copy-on-select = true
 bold-is-bright = true
 cursor-style = bar
@@ -11,7 +16,6 @@ font-family = "Berkeley Mono"
 adjust-cell-height = 10%
 adjust-cell-width = -10%
 background = black
-background-opacity = 0.5
 window-theme = ghostty
 window-padding-x = 12
 window-padding-y = 5
