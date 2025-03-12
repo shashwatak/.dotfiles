@@ -1,9 +1,8 @@
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "mdpls"]
+roots = [ ".zk" ]
+language-servers = ["markdown-oxide", "mdpls"]
 
 [language-server.mdpls]
 command = "/home/autod/.cargo/bin/mdpls"
 config = { markdown.preview.auto = true }
-
-
