@@ -43,3 +43,5 @@ if status is-interactive
     set -g fish_pager_color_description $comment
 
 end
+
+source ~/.config/secrets
