@@ -103,3 +103,7 @@ K = ["search_selection", "extend_search_prev"]
 "A-K" = ["search_selection", "search_prev"]
 
 X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
