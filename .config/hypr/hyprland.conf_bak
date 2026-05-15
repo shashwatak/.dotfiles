@@ -71,16 +71,16 @@ decoration {
         vibrancy = 0.1696
     }
 
-    drop_shadow = yes
-    shadow_range = 4
-    shadow_render_power = 3
-    col.shadow = rgba(1a1a1aee)
+    # drop_shadow = yes
+    # shadow_range = 4
+    # shadow_render_power = 3
+    # col.shadow = rgba(1a1a1aee)
 
 }
 
 # kitty blur
-windowrulev2 = opacity 0.9, class:.* 
-windowrulev2 = opacity 0.65, class:kitty
+# windowrulev2 = opacity 0.9, class:.* 
+# windowrulev2 = opacity 0.65, class:kitty
 
 group {
     groupbar {
@@ -112,13 +112,13 @@ animations {
 
 dwindle {
     # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
-    pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+    # pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
     preserve_split = yes # you probably want this
 }
 
 gestures {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
-    workspace_swipe = off
+    # workspace_swipe = off
 }
 
 misc {
@@ -134,10 +134,10 @@ misc {
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+# windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
-$mainMod = SUPER
+$mainMod = ALT
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
 bind = $mainMod, RETURN, exec, $terminal
@@ -154,24 +154,28 @@ bind = $mainMod, up, movefocus, u
 bind = $mainMod, down, movefocus, d
 
 # Switch workspaces with mainMod + [0-9]
-bind = $mainMod, A, workspace, 1
-bind = $mainMod, R, workspace, 2
-bind = $mainMod, S, workspace, 3
-bind = $mainMod, T, workspace, 4
-bind = $mainMod, N, workspace, 5
-bind = $mainMod, E, workspace, 6
-bind = $mainMod, I, workspace, 7
-bind = $mainMod, O, workspace, 8
+bind = $mainMod, N, workspace, 0
+bind = $mainMod, E, workspace, 1
+bind = $mainMod, I, workspace, 2
+bind = $mainMod, O, workspace, 3
+bind = $mainMod, L, workspace, 4
+bind = $mainMod, U, workspace, 5
+bind = $mainMod, Y, workspace, 6
+bind = $mainMod, :, workspace, 7
+bind = $mainMod, H, workspace, 8
+bind = $mainMod, <, workspace, 9
 
 # Move active window to a workspace with mainMod + SHIFT + [0-9]
-bind = $mainMod SHIFT, A, movetoworkspace, 1
-bind = $mainMod SHIFT, R, movetoworkspace, 2
-bind = $mainMod SHIFT, S, movetoworkspace, 3
-bind = $mainMod SHIFT, T, movetoworkspace, 4
-bind = $mainMod SHIFT, N, movetoworkspace, 5
-bind = $mainMod SHIFT, E, movetoworkspace, 6
-bind = $mainMod SHIFT, I, movetoworkspace, 7
-bind = $mainMod SHIFT, O, movetoworkspace, 8
+bind = $mainMod SHIFT, N, movetoworkspace, 0
+bind = $mainMod SHIFT, E, movetoworkspace, 1
+bind = $mainMod SHIFT, I, movetoworkspace, 2
+bind = $mainMod SHIFT, O, movetoworkspace, 3
+bind = $mainMod SHIFT, L, movetoworkspace, 4
+bind = $mainMod SHIFT, U, movetoworkspace, 5
+bind = $mainMod SHIFT, Y, movetoworkspace, 6
+bind = $mainMod SHIFT, Y, movetoworkspace, 7
+bind = $mainMod SHIFT, H, movetoworkspace, 8
+bind = $mainMod SHIFT, <, movetoworkspace, 9
 
 # make groups of closely coupled windows that we swap between often
 bind = $mainMod, F, togglegroup, 
