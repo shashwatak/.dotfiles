@@ -1,12 +1,15 @@
 local g = require("shared")
 
-
+-- Basics
 hl.bind(g.mainMod .. " + RETURN", hl.dsp.exec_cmd(g.terminal))
 hl.bind(g.mainMod .. " + DELETE", hl.dsp.window.close())
 hl.bind(g.mainMod .. " + P", hl.dsp.exec_cmd(g.menu))
+hl.bind(g.mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
 hl.bind(g.mainMod .. " + Q", hl.dsp.exec_cmd(g.lock))
+hl.bind(g.mainMod .. " + S", hl.dsp.window.float({ action = "toggle" }))
+
+-- Exit hyprland
 hl.bind(g.mainMod .. " + CTRL + SHIFT + " .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(g.mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
 -- Move focus with g.mainMod + arrow keys
 hl.bind(g.mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

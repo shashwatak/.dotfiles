@@ -2,7 +2,7 @@
 local shared = {
   terminal    = "kitty",
   fileManager = "thunar",
-  menu        = "hyprlauncher",
+  menu        = "rofi -show drun",
   lock        = "hyprlock",
   mainMod = "ALT",
 }
