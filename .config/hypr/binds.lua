@@ -4,6 +4,7 @@ local g = require("shared")
 hl.bind(g.mainMod .. " + RETURN", hl.dsp.exec_cmd(g.terminal))
 hl.bind(g.mainMod .. " + DELETE", hl.dsp.window.close())
 hl.bind(g.mainMod .. " + P", hl.dsp.exec_cmd(g.menu))
+hl.bind(g.mainMod .. " + Q", hl.dsp.exec_cmd(g.lock))
 hl.bind(g.mainMod .. " + CTRL + SHIFT + " .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(g.mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
